@@ -20,7 +20,7 @@ respectively.
 Some notes about the cyborg-spec and blueprint process:
 
 * Not all blueprints need a spec. For more information see
-  http://docs.openstack.org/developer/nova/blueprints.html#specs
+  http://docs.openstack.org/developer/cyborg/blueprints.html#specs
 
 * The aim of this document is first to define the problem we need to solve,
   and second agree the overall approach to solve that problem.
@@ -99,8 +99,8 @@ If this is one part of a larger effort make it clear where this piece ends. In
 other words, what's the scope of this effort?
 
 At this point, if you would like to just get feedback on if the problem and
-proposed change fit in Cyborg, you can stop here and post this for review to get
-preliminary feedback. If so please say:
+proposed change fit in Cyborg, you can stop here and post this for review to
+get preliminary feedback. If so please say:
 Posting to get preliminary feedback on the scope of this spec.
 
 Alternatives
