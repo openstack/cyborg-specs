@@ -8,6 +8,16 @@ Template
 
    template
 
+Train
+-----
+This section has a list of specs for the Stein release.
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   train/approved/*
+
 Stein
 -----
 This section has a list of specs for the Stein release.
