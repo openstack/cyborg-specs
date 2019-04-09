@@ -28,7 +28,7 @@ Use Cases
 ---------
 
 For instance, when the user requests FPGA resources, the scheduler will use
-placement agent [1]_ to select appropriate hosts that have the requested FPGA
+placement agent to select appropriate hosts that have the requested FPGA
 resources.
 
 For instance, when Nova picks a device (GPU/FPGA/etc.) resource provider to
