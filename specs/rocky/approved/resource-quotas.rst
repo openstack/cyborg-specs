@@ -201,4 +201,4 @@ None
 References
 ==========
 
-[1] https://review.openstack.org/#/c/540803
+[1] https://review.opendev.org/#/c/540803

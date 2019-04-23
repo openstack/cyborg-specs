@@ -388,10 +388,10 @@ References
 ==========
 
 .. [#CyborgNovaSched] `Cyborg Nova Scheduling Specification
-  <https://review.openstack.org/#/c/554717/>`_
+  <https://review.opendev.org/#/c/554717/>`_
 
 .. [#Bitstreamspec] `Cyborg bitstream metadata standardization spec
-   <https://review.openstack.org/#/c/558265/>`_
+   <https://review.opendev.org/#/c/558265/>`_
 
 .. [#ServerConcepts] `OpenStack Server API Concepts
    <https://developer.openstack.org/api-guide/compute/server_concepts.html>`_

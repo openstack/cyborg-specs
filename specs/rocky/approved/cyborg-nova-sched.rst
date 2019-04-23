@@ -452,11 +452,11 @@ None
 References
 ==========
 
-.. [#os-acc] `Specification for Compute Node <https://review.openstack.org/#/c/566798/>`_
+.. [#os-acc] `Specification for Compute Node <https://review.opendev.org/#/c/566798/>`_
 
 .. [#nRP] `Nested RPs in Rocky <http://specs.openstack.org/openstack/nova-specs/specs/rocky/approved/nested-resource-providers-allocation-candidates.html>`_
 
-.. [#drv-api] `Specification for Cyborg Agent-Driver API <https://review.openstack.org/#/c/561849/>`_
+.. [#drv-api] `Specification for Cyborg Agent-Driver API <https://review.opendev.org/#/c/561849/>`_
 
 .. [#flavor] `Custom Resource Classes in Flavors <https://specs.openstack.org/openstack/nova-specs/specs/pike/implemented/custom-resource-classes-in-flavors.html>`_
 

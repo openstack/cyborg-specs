@@ -300,7 +300,7 @@ Document FPGA Modelling in the Cyborg project
 
 References
 ==========
-.. [#device-profile-spec] `Specification for Device Profile <https://review.openstack.org/#/c/602978/>`_
+.. [#device-profile-spec] `Specification for Device Profile <https://review.opendev.org/#/c/602978/>`_
 
 History
 =======

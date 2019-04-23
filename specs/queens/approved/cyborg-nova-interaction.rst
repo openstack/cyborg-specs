@@ -171,7 +171,7 @@ References
 ==========
 
 * [1] https://docs.openstack.org/developer/nova/placement.html
-* [2] https://review.openstack.org/#/c/318047/
+* [2] https://review.opendev.org/#/c/318047/
 * [3] https://github.com/openstack/nova/blob/390c7e420f3880a352c3934b9331774f7afdadcc/nova/compute/resource_tracker.py#L751
 
 
