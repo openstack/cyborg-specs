@@ -1,5 +1,5 @@
 ..
-This work is licensed under a Creative Commons Attribution 3.0 Unported
+ This work is licensed under a Creative Commons Attribution 3.0 Unported
  License.
 
  http://creativecommons.org/licenses/by/3.0/legalcode
@@ -19,8 +19,9 @@ for the generic accelerator is not supported yet.
 
 In general, these generic devices are the specific accelerators in some specific
 scenarios. For example:
-1. The AI chips. which can be used for AI training and inference.
-2. The security accelerator, which can be used for encryption and decryption.
+
+- The AI chips. which can be used for AI training and inference.
+- The security accelerator, which can be used for encryption and decryption.
 
 In order to add the support for these specific accelerators, we propose to
 improve the generic driver to manage these devices. We propose to improve the
@@ -41,67 +42,67 @@ Proposed change
 As the initial version, the new ``GenericDriver`` should include the following
 attributes:
 
-   - VENDOR: the vendor name of the driver.
-   - TYPE: the type of the driver, such as, "FPGA", "GPU"
+- VENDOR: the vendor name of the driver.
+- TYPE: the type of the driver, such as, "FPGA", "GPU"
 
 and the following interfaces also should be included:
 
-   - discover()
-     Discover specific accelerator
+- discover()
+  Discover specific accelerator
 
-   - update(control_path, image_path):
-     Upgrade the device firmware with a specific image.
-     control_path: the image update control path of device.
-     image_path: The image path of the firmware binary, the image would be
-     downloaded by Cyborg agent.
+- update(control_path, image_path):
+  Upgrade the device firmware with a specific image.
+  control_path: the image update control path of device.
+  image_path: The image path of the firmware binary, the image would be
+  downloaded by Cyborg agent.
 
-   - get_stats():
-     Collects device stats. The ``get_stats`` method is used
-     to collect information from the device about the device capabilities.
-     Such as performance info like temprature, power, volt, packet_count info.
-     The response of get_stats should follow the current Cyborg
-     device-deploy-accelerator model.
+- get_stats():
+  Collects device stats. The ``get_stats`` method is used
+  to collect information from the device about the device capabilities.
+  Such as performance info like temprature, power, volt, packet_count info.
+  The response of get_stats should follow the current Cyborg
+  device-deploy-accelerator model.
 
-     A real stats look like::
+  A real stats look like::
 
-      {
-        "device": {
-          "device_name": "XXX",                 # Standard properties
-          "device_number": "RFD1644N48373",     # Standard properties
-          "properties": {                       # Vendor/Custom properties
-            "id": "1",
-            "temperature": "26",
-            "volt": "",
-            "packet_count": "",
-            "memeory": {
-              "model": "DDR4",
-              "description": ""
-            },
-            "board": {
+   {
+     "device": {
+       "device_name": "XXX",                 # Standard properties
+       "device_number": "RFD1644N48373",     # Standard properties
+       "properties": {                       # Vendor/Custom properties
+         "id": "1",
+         "temperature": "26",
+         "volt": "",
+         "packet_count": "",
+         "memeory": {
+           "model": "DDR4",
+           "description": ""
+         },
+         "board": {
 
-            },
-            "flash": {
+         },
+         "flash": {
 
-            }
-          }
-          "deploy": [
-              {
-                "accelerator": {
-                   "acc_name": "",               # Standard properties
-                   "properties": {               # Vendor/Custom properties
-                   }
+         }
+       }
+       "deploy": [
+           {
+             "accelerator": {
+                "acc_name": "",               # Standard properties
+                "properties": {               # Vendor/Custom properties
                 }
-              },
-              {
-                "accelerator": {
-                   "acc_name": "",               # Standard properties
-                   "properties": {               # Vendor/Custom properties
-                   }
+             }
+           },
+           {
+             "accelerator": {
+                "acc_name": "",               # Standard properties
+                "properties": {               # Vendor/Custom properties
                 }
-              }
-          ]
-        }
-      }
+             }
+           }
+       ]
+     }
+   }
 
 This ``GenericDriver`` should not be used directly, after adding this
 ``GenericDriver``, for every new device, we need to introduce a new driver
@@ -112,14 +113,14 @@ that inherits from this ``GenericDriver``.
 We should also improve FPGA and GPU driver to inherit from this driver and
 implements the base driver interface.
 
-* The generic FPGA driver interface:
+The generic FPGA driver interface:
 The ``discover``, ``update``, ``get_accelerator_stats`` should be implemented
 in the FPGA driver. And the below interface is the FPGA specifc interface:
 
-   - program(controlpath, image_path)
-     Program the FPGA with the provided bitstream image.
+- program(controlpath, image_path)
+  Program the FPGA with the provided bitstream image.
 
-* The generic GPU driver interface:
+The generic GPU driver interface:
 The ``discover``, ``update``, ``get_accelerator_stats`` should be implemented
 in the GPU driver.
 
@@ -166,9 +167,9 @@ Implementation
 Assignee(s)
 -----------
 Primary assignee:
-  Yikun Jiang <yikunkero@gmail.com>
-  Sundar Nadathur <sundar.nadathur@intel.com>
-  wangzhh <wangzh21@lenovo.com>
+Yikun Jiang <yikunkero@gmail.com>
+Sundar Nadathur <sundar.nadathur@intel.com>
+wangzhh <wangzh21@lenovo.com>
 
 
 Work Items
