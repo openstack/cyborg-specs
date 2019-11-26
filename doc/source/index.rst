@@ -7,6 +7,17 @@
 Cyborg Specs
 ============
 
+Ussuri
+------
+This section has a list of specs for the Ussuri release.
+
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   specs/ussuri/approved/*
+
 Train
 -----
 This section has a list of specs for the Train release.
