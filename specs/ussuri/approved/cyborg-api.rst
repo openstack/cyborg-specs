@@ -106,6 +106,9 @@ The database changes needed for these APIs have mostly been done in Train.
 However, we need to add a ``bitstream`` field to ``deployables`` table in the
 database, which can serve as a target in the JSON patch for reprogramming.
 
+Besides, we need to add a ``status`` field to ``device`` table in the
+database, which can indicate whether the device is enabled or disabled.
+
 REST API impact
 ---------------
 
@@ -294,6 +297,13 @@ URL: ``/accelerator/v2/devices``
 METHOD: ``GET``
 
 Query Parameters:
+* hostname: hostname of the compute node where devices are located.
+
+* type: type of devices. For example, we call get all FPGA devices by
+  add "FPGA" as the query parameter.
+
+* vendor: vendor ID of devices. For example, we call get all Intel devices
+  by add "0x8086" as the query parameter.
 
 Proposed JSON response::
 
@@ -306,6 +316,33 @@ Proposed JSON response::
 
 URL: ``/accelerator/v2/devices/{uuid}``
 
+METHOD: ``GET``
+
+ROLE: Admin or any tenant with RBAC authorization.
+
+Proposed JSON response::
+
+ {
+     "vendor": "0x8086",
+     "uuid": "1c6c9033-560d-4a7a-bb8e-94455d1e7825",
+     "links":
+     [
+         {"href": "http://10.238.145.73/accelerator/v2/devices/1c6c9033-560d-4a7a-bb8e-94455d1e7825",
+          "rel": "self"
+          }
+     ],
+     "created_at": "2019-11-12T07:38:55+00:00",
+     "hostname": "host1",
+     "updated_at": null,
+     "vendor_board_info": "fake_vendor_info",
+     "model": "fake_model_info",
+     "type": "FPGA",
+     "id": 2,
+     "std_board_info": "{"class": "Fake class", "device_id": "0x09c4"}
+ }
+
+URL: ``/accelerator/v2/devices/{uuid}``
+
 METHOD: ``PATCH``
 
 ROLE: Admin or any tenant with RBAC authorization.
@@ -314,13 +351,35 @@ Proposed JSON request (in RFC 6902 format)::
 
  {
    [
-      { "path": "/firmware", "op": "add", "value": <img_uuid> },
+      { "path": "/status", "op": "replace", "value": "enabled", "reason": "reason(optional)" },
    ]
  }
 
-Action: Update the firmware or shell image (FPGA bitstream) for the
-  specified device. The request allows a lst of path specifiers for
-  future extensibility.
+Action: Update the device status as ``enabled``. This request will invoke
+placement API to set all resource provider under this device to available.
+Optionally,operators can append a reason of the operation.
+
+Proposed JSON response: None.
+
+URL: ``/accelerator/v2/devices/{uuid}``
+
+METHOD: ``PATCH``
+
+ROLE: Admin or any tenant with RBAC authorization.
+
+Proposed JSON request (in RFC 6902 format)::
+
+ {
+   [
+      { "path": "/status", "op": "replace", "value": "disabled", "reason": "reason(optional)" },
+   ]
+ }
+
+Action: Update the device status as ``disabled``. This request will invoke
+placement API to update the ``reserved`` field of inventories of all resource
+providers under this device to disable this devices from the point of view of
+end-users.
+Optionally, operators can append a reason of the operation.
 
 Proposed JSON response: None.
 
@@ -342,6 +401,7 @@ Action: Update the FPGA bitstream for the specified deployable. The
   request allows a lst of path specifiers for future extensibility.
 
 Proposed JSON response: None.
+
 
 Security impact
 ---------------
