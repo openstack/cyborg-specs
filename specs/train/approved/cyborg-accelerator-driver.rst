@@ -17,8 +17,8 @@ Problem description
 Currently, the FPGA and GPU have been supported in Cyborg, but the capability
 for the generic accelerator is not supported yet.
 
-In general, these generic devices are the specific accelerators in some specific
-scenarios. For example:
+In general, these generic devices are the specific accelerators in some
+specific scenarios. For example:
 
 - The AI chips. which can be used for AI training and inference.
 - The security accelerator, which can be used for encryption and decryption.
@@ -33,8 +33,8 @@ Use Cases
 - As an AI chip vendor, I want to add the driver in Cyborg, but the existing
   driver type doesn't meet our requirement. We hope the driver can provide the
   firmware upgrade, device configure, device stats query.
-- As a security accelerator vendor, I want add the driver in Cyborg with security
-  accelerator configure and device stats query
+- As a security accelerator vendor, I want add the driver in Cyborg with
+  security accelerator configure and device stats query
 
 Proposed change
 ===============

@@ -72,10 +72,11 @@ ControlPathID table tracks identifiers for a control path interface to devices.
 E.g. PCI PF. Aka Device ID. A device may have more than one of these, in which
 case the Cyborg driver needs to know how to handle these.
 
-ExtARQs table tracks the accelerator requests which are sent by Nova. It contains
-fields both Nova acknowledgeable as well as only Cyborg specific. For the fields
-that are Nova acknowledgeable, they will be used to form ARQ objects. On the
-other hand, for cyborg specifc fields, they will be used to form ExtARQ objects.
+ExtARQs table tracks the accelerator requests which are sent by Nova. It
+contains fields both Nova acknowledgeable as well as only Cyborg specific.
+For the fields that are Nova acknowledgeable, they will be used to form ARQ
+objects. On the other hand, for cyborg specifc fields, they will be used to
+form ExtARQ objects.
 
 DeviceProfiles [#device-profile-spec]_ table tracks  the set of requirements
 for accelerators. A device profile is a named set of the user requirements for
