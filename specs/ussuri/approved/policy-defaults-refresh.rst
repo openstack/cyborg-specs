@@ -55,7 +55,7 @@ use these default roles:
 https://specs.openstack.org/openstack/keystone-specs/specs/keystone/rocky/define-default-roles.html
 
 In addition, we can use the new "system scope" concept to define
-which users are global administrators:
+which users are system administrators:
 https://specs.openstack.org/openstack/keystone-specs/specs/keystone/queens/system-scope.html
 
 Use Cases
@@ -88,7 +88,7 @@ Cyborg V2 APIs need RBAC check. Objects of V2 APIs are listed in the following:
   NOTE that sys_admin is required to do the pre_configuration for devices.
 
 * accelerator_requests are sent by nova to bind/unbind accelerators to VMs
-  during instance boot. Any peoject user who can create VM should be able to
+  during instance boot. Any project user who can create VM should be able to
   create an arq, so "member" role is required for arq:create. And for the
   arq:patch and arq:delete admin_or_owner should make sense.
 
@@ -114,20 +114,27 @@ deprecation workflow, where both old and new policy check strings are active
 during the deprecation period.
 
 * Add system scoped admin policy
+
   This policy will be useful for situations where devices are shared by
   multiple projects, and we want a system-level admin to operator the devices
   like programming or firmware upgrade. In addition, a system admin is required
   to do the service disable/enable things.
+
 * Add system scoped reader policy
+
   This policy will be useful for situations where a read-only role is required
   for a more secure access to devices that are shared by multiple projects in
   a system.
+
 * Add project scoped reader policy
+
   Similarly, this policy will be useful for situations where a read-only role
   is required for a more secure access at a project level. For example, some
   users should only have the permission to check and use the resources but
   shouldn't update the resources.
-* Add project scoped member plicy
+
+* Add project scoped member policy
+
   This policy will be used to check if a user is eligible to post a non-admin
   API such as arq creation.
 
