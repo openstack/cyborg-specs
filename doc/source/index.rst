@@ -7,6 +7,17 @@
 Cyborg Specs
 ============
 
+Victoria
+--------
+This section has a list of specs for the Victoria release.
+
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   specs/victoria/approved/*
+
 Ussuri
 ------
 This section has a list of specs for the Ussuri release.
@@ -74,4 +85,10 @@ Template
 .. toctree::
    :maxdepth: 1
 
-   specs/template
+   specs/victoria-template
+   specs/ussuri-template
+   specs/train-template
+   specs/stein-template
+   specs/rocky-template
+   specs/queens-template
+   specs/pike-template
