@@ -7,6 +7,16 @@
 Cyborg Specs
 ============
 
+Wallaby
+-------
+This section has a list of specs for the Wallaby release.
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   specs/wallaby/approved/*
+
 Victoria
 --------
 This section has a list of specs for the Victoria release.
@@ -85,6 +95,7 @@ Template
 .. toctree::
    :maxdepth: 1
 
+   specs/wallaby-template
    specs/victoria-template
    specs/ussuri-template
    specs/train-template
