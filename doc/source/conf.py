@@ -24,6 +24,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'openstackdocstheme',
     #'sphinx.ext.intersphinx',
+    'sphinxcontrib.seqdiag',
 ]
 
 # autodoc generation is a bit aggressive and a nuisance when doing heavy
@@ -79,3 +80,8 @@ latex_documents = [
 
 # Example configuration for intersphinx: refer to the Python standard library.
 #intersphinx_mapping = {'http://docs.python.org/': None}
+
+# -- seqdiag configuration ----------------------------------------------------
+
+seqdiag_html_image_format = 'SVG'
+seqdiag_antialias = True
