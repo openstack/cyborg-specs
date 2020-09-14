@@ -21,9 +21,9 @@ authentication, asymmetric encryption, digital signatures, RSA, DH, and ECC,
 and lossless data compression. Hence, using Intel® QAT for application
 acceleration in cloud has been becoming desirable.
 
-Intel® QAT card also support SRIOV, which means admin can virtualize it into
-serveral VFs and assign VFs to the VM. One Intel® QAT Card usually has 3 or 6
-PFs which correspond to "Device" notion in Cyborg, and each of them can be
+Intel® QAT card also support SRIOV [1]_, which means admin can virtualize it
+into serveral VFs and assign VFs to the VM. One Intel® QAT Card usually has 3
+or 6 PFs which correspond to "Device" notion in Cyborg, and each of them can be
 virtualize into 8 or 16 VFs. It depends on diffirent devices.
 
 This spec will add a Intel® QAT driver for Cyborg to manage specific Intel® QAT
@@ -92,7 +92,7 @@ Other deployer impact
 Deployers should install the specific Intel® QAT software package that the
 driver depends on.
 
-Please see ref [1]_ for details.
+Please see ref [2]_ for details.
 
 Developer impact
 ----------------
@@ -149,4 +149,5 @@ History
 
 References
 ==========
-.. [1] https://01.org/intel-quickassist-technology
+.. [1] https://01.org/sites/default/files/downloads//330689intelqatvirtualizationappnoterev009us.pdf
+.. [2] https://01.org/sites/default/files/downloads//336212007qatswgsg.pdf
