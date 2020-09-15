@@ -25,7 +25,12 @@ extensions = [
     'openstackdocstheme',
     #'sphinx.ext.intersphinx',
     'sphinxcontrib.seqdiag',
+    'yasfb',
 ]
+
+# Feed configuration for yasfb
+feed_base_url = 'http://specs.openstack.org/openstack/cyborg-specs'
+feed_author = 'OpenStack Development Team'
 
 # autodoc generation is a bit aggressive and a nuisance when doing heavy
 # text edit cycles.
