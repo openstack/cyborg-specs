@@ -133,8 +133,8 @@ Document Intel® QAT driver in Cyborg project.
 References
 ==========
 
-None
-
+.. [1] https://01.org/sites/default/files/downloads//330689intelqatvirtualizationappnoterev009us.pdf
+.. [2] https://01.org/sites/default/files/downloads//336212007qatswgsg.pdf
 
 History
 =======
@@ -146,8 +146,3 @@ History
      - Description
    * - Victoria
      - Introduced
-
-References
-==========
-.. [1] https://01.org/sites/default/files/downloads//330689intelqatvirtualizationappnoterev009us.pdf
-.. [2] https://01.org/sites/default/files/downloads//336212007qatswgsg.pdf
