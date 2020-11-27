@@ -175,6 +175,8 @@ References
 * Cyborg Driver Spec
 * Cyborg Conductor Spec
 
+.. [1] https://blueprints.launchpad.net/openstack-cyborg/+spec/cyborg-fpga-modelling
+.. [2] https://01.org/OPAE
 
 History
 =======
@@ -186,8 +188,3 @@ History
      - Description
    * - Queens
      - Introduced
-
-References
-==========
-.. [1] https://blueprints.launchpad.net/openstack-cyborg/+spec/cyborg-fpga-modelling
-.. [2] https://01.org/OPAE
