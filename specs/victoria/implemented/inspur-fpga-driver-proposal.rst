@@ -152,8 +152,3 @@ History
      - Description
    * - Victoria
      - Introduced
-
-References
-==========
-
-None
