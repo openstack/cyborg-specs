@@ -461,7 +461,7 @@ References
    <http://specs.openstack.org/openstack/api-wg/guidelines/microversion_specification.html>`_
 
 .. [#devprof-spec] `Specification for device profiles
-   <http://specs.openstack.org/openstack/cyborg-specs/specs/train/approved/device-profiles.html>`_
+   <http://specs.openstack.org/openstack/cyborg-specs/specs/train/implemented/device-profiles.html>`_
 
 History
 =======
