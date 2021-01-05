@@ -43,8 +43,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'cyborg-specs'
-copyright = u'2017, OpenStack Developers'
+project = 'cyborg-specs'
+copyright = '2017, OpenStack Developers'
 
 # openstackdocstheme options
 openstackdocs_repo_name = 'openstack/cyborg-specs'
@@ -79,8 +79,8 @@ htmlhelp_basename = '%sdoc' % project
 latex_documents = [
     ('index',
      '%s.tex' % project,
-     u'%s Documentation' % project,
-     u'OpenStack Developers', 'manual'),
+     '%s Documentation' % project,
+     'OpenStack Developers', 'manual'),
 ]
 
 # Example configuration for intersphinx: refer to the Python standard library.
