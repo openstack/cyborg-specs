@@ -7,6 +7,34 @@
 Cyborg Specs
 ============
 
+Xena
+----
+This section has a list of specs for the Xena release.
+
+Template:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   Specification Template (Xena release) <specs/xena-template>
+
+Xena implemented specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/xena/implemented/*
+
+Xena approved (but not implemented) specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/xena/approved/*
+
 Wallaby
 -------
 This section has a list of specs for the Wallaby release.
