@@ -77,16 +77,16 @@ and placement data model [5]_.(NEW CHANGE)
 4. Supporting set the vGPU type for a specific GPU device in cyborg.conf. The
 implementation is similar to that in Nova [9]_.(NEW CHANGE)
 
-* Firstly, we propose [gpu]/enabled_vgpu_types to define which vgpu type Cyborg
-  driver can use:
+* Firstly, we propose [gpu_devices]/enabled_vgpu_types to define which vgpu
+  type Cyborg driver can use:
 
   ::
 
-    [gpu]
+    [gpu_devices]
     enabled_vgpu_types = [str_vgpu_type_1, str_vgpu_type_2, ...]
 
 * And also, we propose that Cyborg driver will accept configuration sections
-  that are related to the [gpu]/enabled_vgpu_types and specifies which
+  that are related to the [gpu_devices]/enabled_vgpu_types and specifies which
   exact pGPUs are related to the enabled vGPU types and will have a
   device_addresses option defined like this:
 
@@ -95,29 +95,29 @@ implementation is similar to that in Nova [9]_.(NEW CHANGE)
     cfg.ListOpt('device_addresses',
                 default=[],
                 help="""
-    List of physical PCI addresses to associate with a specific GPU type.
+    List of physical PCI addresses to associate with a specific vGPU type.
 
     The particular physical GPU device address needs to be mapped to the vendor
     vGPU type which that physical GPU is configured to accept. In order to
     provide this mapping, there will be a CONF section with a name
-    corresponding to the following template: "vgpu_type_%(vgpu_type_name)s
+    corresponding to the following template: "vgpu_%(vgpu_type_name)s
 
     The vGPU type to associate with the PCI devices has to be the section name
     prefixed by ``vgpu_``. For example, for 'nvidia-11', you would declare
     ``[vgpu_nvidia-11]/device_addresses``.
 
-    Each vGPU type also has to be declared in ``[devices]/enabled_vgpu_types``.
+    Each vGPU type also has to be declared in ``[gpu_devices]/enabled_vgpu_types``.
 
     Related options:
 
-    * ``[gpu]/enabled_vgpu_types``
+    * ``[gpu_devices]/enabled_vgpu_types``
     """),
 
   For example, it would be set in cyborg.conf
 
   ::
 
-    [gpu]
+    [gpu_devices]
     enabled_vgpu_types = nvidia-223,nvidia-224
     [vgpu_nvidia-223]
     device_addresses = 0000:af:00.0,0000:86:00.0
