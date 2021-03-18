@@ -74,10 +74,12 @@ An example of the configuration file is:
 
 .. code-block:: RST
 
-    [dev-name]
-    pci_address=0000:18:00.0
-    function_name=GTPv1 # The name of the DDP profile
-    physnet=physnet1
+    [nic_devices]
+    enabled_nic_types = x710_static
+
+    [x710_static]
+    physical_device_mappings = physnet1:eth2|eth3
+    function_device_mappings = GTPv1:eth3|eth2
 
 
 Programming
