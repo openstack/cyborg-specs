@@ -7,6 +7,34 @@
 Cyborg Specs
 ============
 
+Yoga
+----
+This section has a list of specs for the Yoga release.
+
+Template:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   Specification Template (Yoga release) <specs/yoga-template>
+
+Yoga implemented specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/yoga/implemented/*
+
+Yoga approved (but not implemented) specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/yoga/approved/*
+
 Xena
 ----
 This section has a list of specs for the Xena release.
