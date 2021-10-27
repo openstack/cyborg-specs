@@ -76,13 +76,13 @@ granular resource requests for Nova flavors. Here is an example::
     'name': 'my_device_profile',
     'description': 'Image classification',
     'groups': [
-      { 'resources:CUSTOM_ACCELERATOR_FPGA=1',
-        'trait:CUSTOM_FPGA_INTEL_ARRIA10=required',
-        'accel:function_id=3AFB'
+      { 'resources:CUSTOM_ACCELERATOR_FPGA':'1',
+        'trait:CUSTOM_FPGA_INTEL_ARRIA10':'required',
+        'accel:function_id':'3AFB'
       },
-      { 'resources:CUSTOM_ACCELERATOR_GPU=2',
-        'trait:CUSTOM_GPU_MODEL_NAME=required',
-        'accel:video_ram=2GB'
+      { 'resources:CUSTOM_ACCELERATOR_GPU':'2',
+        'trait:CUSTOM_GPU_MODEL_NAME':'required',
+        'accel:video_ram':'2GB'
       },
     ]
     'uuid': '8411555e-3cbf-47de-988c-b5e30bbfa035' # auto-generated
@@ -109,13 +109,13 @@ section.
 Each field uses a format similar to extra specs; it specifies either a
 resource, a trait or a Cyborg-specific property. The properties are
 specified using the ``accel:`` prefix and are of the form
-``accel:<key>=<value>``. Both the key and the value are strings, which may
+``'accel:<key>':'<value>'``. Both the key and the value are strings, which may
 contain alphabets (lower or upper case), digits, hyphens and underscores. No
 other characters are allowed. In the future, modifiers may be introduced after
 the ``accel:`` prefix. For example, to indicate that some resource is
 preferred but not required, a possible syntax could be
-``accel:preferred:resource_name=amount``. The valid keys in this release are
-listed in Section `Valid accel keys`_.
+``'accel:preferred:resource_name':'amount'``. The valid keys in this release
+are listed in Section `Valid accel keys`_.
 
 The requests are grouped in the same way as granular resource syntax. The
 ordering among the groups is not significant. However, no group policy is
@@ -190,8 +190,8 @@ the upgrade.
 Valid accel keys
 ----------------
 The Cyborg-specific properties are expressed in the device profile using the
-form ``accel:<key>=<value>``, as noted earlier.  The valid key-value pairs in
-this release are as noted below:
+form ``'accel:<key>':'<value>``, as noted earlier.  The valid key-value pairs
+in this release are as noted below:
 
 .. list-table:: Cyborg Properties
    :header-rows: 1
