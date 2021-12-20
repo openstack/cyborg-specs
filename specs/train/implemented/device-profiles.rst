@@ -167,7 +167,7 @@ The command line syntax for device profiles is proposed in this section. ::
   openstack accelerator device profile create <name> <json>
   openstack accelerator device profile delete <name>
   openstack accelerator device profile list
-  openstack accelerator device profile show <name>
+  openstack accelerator device profile show <uuid>
 
 Other commands can be taken up in the future after operator feedback.
 
@@ -263,7 +263,7 @@ REST API impact
     422 (Unprocessable): No device profile of that UUID exists
     No response body
  Note:
-    List the device profile with the specified name.
+    Get the device profile with the specified uuid.
 
  URL: /v2/device_profiles
  METHOD: POST
