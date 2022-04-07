@@ -7,6 +7,34 @@
 Cyborg Specs
 ============
 
+Zed
+----
+This section has a list of specs for the Zed release.
+
+Template:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   Specification Template (Zed release) <specs/zed-template>
+
+Zed implemented specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/zed/implemented/*
+
+Zed approved (but not implemented) specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/zed/approved/*
+
 Yoga
 ----
 This section has a list of specs for the Yoga release.
