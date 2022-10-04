@@ -7,6 +7,34 @@
 Cyborg Specs
 ============
 
+2023.1 Antelope
+---------------
+This section has a list of specs for the Antelope release.
+
+Template:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   Specification Template (2023.1 Antelope release) <specs/2023.1-antelope-template>
+
+2023.1 Antelope implemented specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/2023.1/implemented/*
+
+2023.1 Antelope approved (but not implemented) specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/2023.1/approved/*
+
 Zed
 ----
 This section has a list of specs for the Zed release.
