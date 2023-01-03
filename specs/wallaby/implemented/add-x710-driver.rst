@@ -22,7 +22,7 @@ and virtualization, flexibility for LAN or SAN networks and proven, reliable
 performance.
 
 This device also support SR-IOV virtualization technology, it can be
-virtualized up to 128 VFs, each VF can support a unique and seperate date path
+virtualized up to 128 VFs, each VF can support a unique and separate data path
 for I/O related functions within the PCI Express hierarchy.
 
 Using SR-IOV with the networking device, for example, allow the bandwidth of a
@@ -30,7 +30,7 @@ single port(function) to be partitioned into smaller slices that can be
 allocated to specific VMs or guest, via a standard interface.
 
 One of the key features of x710 Network Adapter is Dynamic Device
-Personalizaiton(DDP) [3]_.
+Personalization(DDP) [3]_.
 
 DDP allows dynamic reconfiguration of the packet processing pipeline to meet
 specific use case needs on demand, adding new packet processing pipeline
@@ -43,11 +43,11 @@ software. The DPDK provides all APIs to handle DDP packages.
 
 Use Cases
 ---------
-* As an operator, I want to use Cyborg to manage lifycycle of Intel X710.
+* As an operator, I want to use Cyborg to manage lifecycle of Intel X710.
   Cyborg side driver should be able to manage this kind of acceleration
   resources including discover it, report it to Placement and program it.
-* As an end user, I want to boot up a VM with Intel X710 to acclerate network
-  related workloas, Cyborg should be able to interact with Nova to assign it
+* As an end user, I want to boot up a VM with Intel X710 to accelerate network
+  related workloads, Cyborg should be able to interact with Nova to assign it
   the VM.
 * As an advanced end user, I want to customize a profile to load on Intel X710
   when booting up a VM with it, Cyborg driver should be able to provide such
@@ -64,7 +64,7 @@ Discovery
 
 The driver should include discover functions which will be called by agent
 periodically, and encapsule the device information to Cyborg's unified data
-model, such as Device, Deployale, AttachHandle and so on.
+model, such as Device, Deployable, AttachHandle and so on.
 
 Besides, we should also implement a configuration file to let Cyborg driver
 to discover the loaded DDP profile on X710, as well as the physnet name
@@ -89,7 +89,7 @@ The driver should implement a program() function which allow Cyborg API to
 call to load a specific profile on the nic, this is a part-implementation of
 the third use case mentioned above.
 
-To implement this functinality, Nova needs to parse user's request and get the
+To implement this functionality, Nova needs to parse user's request and get the
 profile's name, and Cyborg should get this profile's info from Nova and let
 this driver to load profile to the selected device.
 
@@ -198,7 +198,7 @@ Testing
 ========
 
 * Unit tests will be added to test this driver.
-* Add test result in Cyborg Wiki which is required by the Cyborg comunity.
+* Add test result in Cyborg Wiki which is required by the Cyborg community.
 
 Documentation Impact
 ====================
