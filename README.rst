@@ -1,15 +1,8 @@
-========================
-Team and repository tags
-========================
-
-.. image:: http://governance.openstack.org/tc/badges/cyborg-specs.svg
-    :target: http://governance.openstack.org/tc/reference/tags/index.html
-
-.. Change things from this point on
-
 ===============================
 OpenStack Cyborg Specifications
 ===============================
+
+.. image:: https://governance.openstack.org/tc/badges/cyborg-specs.svg
 
 This git repository is used to hold approved design specifications for additions
 to the Cyborg project. Reviews of the specs are done in gerrit, using a similar
