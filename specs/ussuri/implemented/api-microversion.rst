@@ -226,12 +226,10 @@ Documentation Impact
 References
 ==========
 
-.. [#microversion-spec] `Microversion Specification
-   <http://specs.openstack.org/openstack/api-wg/guidelines/microversion_specification.html>`_
-.. [#cinde-mv-spec] `Cinder Microversion Spec
-   <https://specs.openstack.org/openstack/cinder-specs/specs/mitaka/api-microversions.html>`_
-.. [#cyborg-api-doc] `Cyborg API Documentation
-   <https://docs.openstack.org/api-ref/accelerator/v2/index.html>`_
+.. [#cyborg-api-doc] `Cyborg API Documentation <https://docs.openstack.org/api-ref/accelerator/v2/index.html>`_
+
+* `Microversion Specification <http://specs.openstack.org/openstack/api-wg/guidelines/microversion_specification.html>`_
+* `Cinder Microversion Spec <https://specs.openstack.org/openstack/cinder-specs/specs/mitaka/api-microversions.html>`_
 
 History
 =======

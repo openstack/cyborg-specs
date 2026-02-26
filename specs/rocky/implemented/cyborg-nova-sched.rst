@@ -460,13 +460,13 @@ References
 
 .. [#flavor] `Custom Resource Classes in Flavors <https://specs.openstack.org/openstack/nova-specs/specs/pike/implemented/custom-resource-classes-in-flavors.html>`_
 
-.. [#qspec] `Cyborg Nova Queens Spec <https://github.com/openstack/cyborg/blob/master/doc/specs/queens/approved/cyborg-nova-interaction.rst>`_
+* `Cyborg Nova Queens Spec <https://github.com/openstack/cyborg/blob/master/doc/specs/queens/approved/cyborg-nova-interaction.rst>`_
 
-.. [#ptg] `Rocky PTG Etherpad for Cyborg Nova Interaction <https://etherpad.openstack.org/p/cyborg-ptg-rocky-nova-cyborg-interaction>`_
+* `Rocky PTG Etherpad for Cyborg Nova Interaction <https://etherpad.openstack.org/p/cyborg-ptg-rocky-nova-cyborg-interaction>`_
 
-.. [#multifn] `Detailed Cyborg/Nova scheduling <https://etherpad.openstack.org/p/Cyborg-Nova-Multifunction>`_
+* `Detailed Cyborg/Nova scheduling <https://etherpad.openstack.org/p/Cyborg-Nova-Multifunction>`_
 
-.. [#mails] `Openstack-dev email discussion <https://lists.openstack.org/pipermail/openstack-dev/2018-April/128951.html>`_
+* `Openstack-dev email discussion <https://lists.openstack.org/pipermail/openstack-dev/2018-April/128951.html>`_
 
 
 

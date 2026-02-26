@@ -24,7 +24,6 @@ extensions = [
     'sphinx.ext.autodoc',
     'openstackdocstheme',
     #'sphinx.ext.intersphinx',
-    'sphinxcontrib.seqdiag',
     'yasfb',
 ]
 
@@ -77,16 +76,14 @@ htmlhelp_basename = '%sdoc' % project
 # (source start file, target name, title, author, documentclass
 # [howto/manual]).
 latex_documents = [
-    ('index',
-     '%s.tex' % project,
-     '%s Documentation' % project,
-     'OpenStack Developers', 'manual'),
+    (
+        'index',
+        '%s.tex' % project,
+        '%s Documentation' % project,
+        'OpenStack Developers',
+        'manual',
+    ),
 ]
 
 # Example configuration for intersphinx: refer to the Python standard library.
-#intersphinx_mapping = {'http://docs.python.org/': None}
-
-# -- seqdiag configuration ----------------------------------------------------
-
-seqdiag_html_image_format = 'SVG'
-seqdiag_antialias = True
+# intersphinx_mapping = {'http://docs.python.org/': None}

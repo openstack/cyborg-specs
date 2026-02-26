@@ -394,14 +394,14 @@ Cyborg API documentation needs to be updated.
 References
 ==========
 
-.. [#nova-cyborg] `Nova Cyborg interaction specification
-   <https://review.openstack.org/#/c/603955/>`_
-
 .. [#version-disc] `Microversions and Version Discovery
    <http://specs.openstack.org/openstack/api-wg/guidelines/microversion_specification.html/>`_
 
 .. [#devprof-spec] `Specification for device profiles
    <https://review.opendev.org/602978/>`_
+
+* `Nova Cyborg interaction specification <https://review.openstack.org/#/c/603955/>`_
+
 
 History
 =======

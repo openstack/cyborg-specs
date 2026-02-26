@@ -367,8 +367,7 @@ References
 .. [#accel-keys] `Device profile accel keys
    <https://opendev.org/openstack/cyborg-specs/src/branch/master/specs/train/approved/device-profiles.rst#valid-accel-keys>`_
 
-.. [#nRP] `Enable use of Nested Resource Providers in Nova Scheduler
-  <https://review.openstack.org/#/q/topic:use-nested-allocation-candidates>`_
+* `Enable use of Nested Resource Providers in Nova Scheduler <https://review.openstack.org/#/q/topic:use-nested-allocation-candidates>`_
 
 History
 =======
