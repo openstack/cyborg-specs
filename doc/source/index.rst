@@ -7,8 +7,36 @@
 Cyborg Specs
 ============
 
+2026.2
+------
+This section has a list of specs for the 2026.2 release.
+
+Template:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   Specification Template (2026.2 release) <specs/2026.2-template>
+
+2026.2 implemented specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/2026.2/implemented/*
+
+2026.2 approved (but not implemented) specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/2026.2/approved/*
+
 2023.2 Bobcat
----------------
+-------------
 This section has a list of specs for the Bobcat release.
 
 Template:
