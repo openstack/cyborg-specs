@@ -7,6 +7,34 @@
 Cyborg Specs
 ============
 
+2027.1
+------
+This section has a list of specs for the 2027.1 release.
+
+Template:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   Specification Template (2027.1 release) <specs/2027.1-template>
+
+2027.1 implemented specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/2027.1/implemented/*
+
+2027.1 approved (but not implemented) specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   specs/2027.1/approved/*
+
 2026.2
 ------
 This section has a list of specs for the 2026.2 release.
