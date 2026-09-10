@@ -7,3 +7,9 @@
 
    Specification Template <template>
 
+.. toctree::
+   :glob:
+   :maxdepth: 1
+
+   approved/*
+
